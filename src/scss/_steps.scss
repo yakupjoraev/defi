@@ -1,0 +1,228 @@
+.steps {
+  position: relative;
+  padding: 120px 0;
+
+  @media (max-width: $breakpoint1450) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 60px 0;
+  }
+
+  // .steps__inner
+
+  &__inner {}
+
+  // .steps__head
+
+  &__head {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    margin-bottom: 80px;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      row-gap: 24px;
+    }
+  }
+
+  // .steps__title
+
+  &__title {
+    flex: 0 1 620px;
+    font-family: var(--font4);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      flex: 0 1 auto;
+    }
+  }
+
+  // .steps__text
+
+  &__text {
+    flex: 0 1 620px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint768) {
+      flex: 0 1 auto;
+    }
+  }
+
+  // .steps__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+    row-gap: 48px;
+
+    @media (max-width: $breakpoint992) {
+      // max-width: 970px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 60px;
+    }
+  }
+
+  // .steps__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  // .steps__item-num
+
+  &__item-num {
+    position: relative;
+    margin-bottom: 12px;
+    font-family: var(--font5);
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    color: var(--white);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+
+      border-radius: 100%;
+      background: radial-gradient(50% 50% at 50% 50%, rgb(68, 199, 255) 0%, rgb(43, 226, 247) 100%);
+      filter: blur(20px);
+      z-index: -1;
+
+      @media (max-width: $breakpoint992) {
+        width: 60px;
+        height: 60px;
+      }
+
+      @media (max-width: $breakpoint768) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+
+  // .steps__item-label
+
+  &__item-label {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--white);
+  }
+
+  // .steps__item-rows
+
+  &__item-rows {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+  }
+
+  // .steps__item-row
+
+  &__item-row {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 18px;
+  }
+
+  // .steps__item-subnum
+
+  &__item-subnum {
+    position: relative;
+    margin-top: 5px;
+    font-family: var(--font5);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: var(--white);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 30px;
+      height: 30px;
+
+      border-radius: 100%;
+      background: radial-gradient(50% 50% at 50% 50%, rgb(68, 199, 255) 0%, rgb(43, 226, 247) 100%);
+      filter: blur(10px);
+      z-index: -1;
+
+    }
+  }
+
+  // .steps__item-text
+
+  &__item-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+  }
+}
+
+.steps-benefits {
+  padding: 80px 0;
+
+  @media (max-width: $breakpoint1450) {
+    padding: 60px 0;
+  }
+
+}
+
+.steps__list--column-2 {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  justify-items: center;
+
+  .steps__item {
+    max-width: 450px;
+    text-align: center;
+  }
+
+  .steps__item-num {
+    font-size: 0;
+  }
+
+  .steps__item-label {
+    font-size: 25px;
+  }
+}

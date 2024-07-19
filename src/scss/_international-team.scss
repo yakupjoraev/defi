@@ -1,0 +1,68 @@
+.international-team {
+  padding: 112px 0;
+
+  @media (max-width: $breakpoint1450) {
+    padding: 100px 0;
+  }
+
+  @media (max-width: $breakpoint992) {
+    padding: 80px 0;
+  }
+
+  @media (max-width: $breakpoint768) {
+    padding: 60px 0;
+  }
+
+  // .international-team__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  // .international-team__title
+
+  &__title {
+    font-family: var(--font4);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 32px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      font-size: 28px;
+    }
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+    }
+  }
+
+  // .international-team__text
+
+  &__text {
+    max-width: 80%;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--white);
+
+    @media (max-width: $breakpoint1450) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $breakpoint992) {
+      max-width: 100%;
+    }
+  }
+}
+
+.container {}
+
+.green-color {}
