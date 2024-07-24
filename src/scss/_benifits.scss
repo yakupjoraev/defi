@@ -132,6 +132,7 @@
       border-radius: 100%;
       background: radial-gradient(50% 50% at 50% 50%, rgb(68, 199, 255) 0%, rgb(43, 226, 247) 100%);
       filter: blur(20px);
+      z-index: -1;
 
       @media (max-width: $breakpoint992) {
         width: 60px;
