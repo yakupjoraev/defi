@@ -288,6 +288,13 @@ body.locked {
   color: var(--green);
 }
 
+.typing-animation {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  /* This ensures the height calculation is accurate */
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,11 +490,13 @@ body.locked {
   position: absolute;
   right: 0;
   top: 50px;
+  width: auto;
+  height: auto;
 }
 
 .hero__pic-text {
   position: absolute;
-  top: 38%;
+  top: 53%;
   right: 50px;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
