@@ -1130,6 +1130,7 @@ b.info__text {
 .safety__grid-pic::before {
   content: "";
   position: absolute;
+  z-index: -1;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
