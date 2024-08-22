@@ -178,3 +178,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+
+document.querySelectorAll('.navbar__language').forEach(language => {
+  language.addEventListener('click', function (e) {
+    e.preventDefault();
+    const selectedLang = this.getAttribute('data-lang');
+
+    // Перенаправление на соответствующую страницу в зависимости от выбранного языка
+    if (selectedLang === 'en') {
+      window.location.href = '/eng/'; // Абсолютный путь к английской версии
+    } else if (selectedLang === 'ru') {
+      window.location.href = '/index.html'; // Абсолютный путь к русской версии
+    }
+  });
+});
+
+
+
+// function changeLanguage(lang) {
+//   document.querySelectorAll('[data-key]').forEach(element => {
+//     const key = element.getAttribute('data-key');
+//     element.textContent = translations[lang][key];
+//   });
+// }
+
